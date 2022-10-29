@@ -3,9 +3,9 @@
 1. Create binaries
 
    ```sh
-   swift build -c release
-   ./.build/release/CoreLocationCLI --help
-   cp ./.build/release/CoreLocationCLI .
+   swift build -c release --arch arm64 --arch x86_64
+   ./.build/apple/Products/Release/CoreLocationCLI --help
+   cp ./.build/apple/Products/Release/CoreLocationCLI .
    zip CoreLocationCLI.zip CoreLocationCLI
    ```
 

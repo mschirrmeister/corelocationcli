@@ -91,7 +91,7 @@ Or build from the command line using the Xcode compiler with one of these comman
 ```sh
 xcodebuild # requires Apple Developer account
 # ... or ...
-swift build --disable-sandbox -c release # does not require account
+swift build --disable-sandbox -c release --arch arm64 --arch x86_64 # does not require account
 ```
 
 Then run your executable from this location:
